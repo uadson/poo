@@ -1,40 +1,40 @@
-class Restaurant():
-	def __init__(self, restaurant_name, cuisine_type):
-		self.restaurant_name = restaurant_name
-		self.cuisine_type = cuisine_type
-		self.number_served = 0 
+class Restaurante():
+	def __init__(self, nome, cozinha):
+		self.nome = nome
+		self.cozinha = cozinha
+		self.pessoas_servidas = 0 
 
 
-	def describe_restaurant(self):
-		print(f'Bem Vindos ao {self.restaurant_name.title()}!')
-		print(f'Experimente o melhor da cozinha {self.cuisine_type.title()}!')
+	def descrever_restaurante(self):
+		print(f'Bem Vindos ao {self.nome.title()}!')
+		print(f'Experimente o melhor da cozinha {self.cozinha.title()}!')
 
 
-	def open_restaurant(self):
+	def abrir_restaurante(self):
 		print(f'ABERTO!')
 
 
-	def set_number_served(self):
-		print(f'Número de pessoas atendidas: {self.number_served}')
+	def config_num_pessoas(self):
+		print(f'Número de pessoas atendidas: {self.pessoas_servidas}')
 
 
-	def increment_number_served(self, served):
-		self.number_served += served
+	def add_num_pessoas(self, servicos):
+		self.pessoas_servidas += servicos
 		
 
 if __name__ == '__main__':
-	restaurant = Restaurant('Manggiare', 'Italiana')
-	restaurant.number_served = 35
+	restaurante = Restaurante('Manggiare', 'Italiana')
+	restaurante.pessoas_servidas = 35
 	
 
-	print(f'Nome do Restaurante: {restaurant.restaurant_name}')
-	print(f'Tipo de Cozinha: {restaurant.cuisine_type}\n')
+	print(f'Nome do Restaurante: {restaurante.nome}')
+	print(f'Tipo de Cozinha: {restaurante.cozinha}\n')
 
 
-	restaurant.describe_restaurant()
-	restaurant.open_restaurant()
-	restaurant.set_number_served()
+	restaurante.descrever_restaurante()
+	restaurante.abrir_restaurante()
+	restaurante.config_num_pessoas()
 
 
-	restaurant.increment_number_served(30)
-	restaurant.set_number_served()
+	restaurante.add_num_pessoas(30)
+	restaurante.config_num_pessoas()
