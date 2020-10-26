@@ -6,78 +6,68 @@ assim, uma espécie de classe-filha.
 
 O exemplo abaixo será uma herança da classe Car do módulo car.py.
 
-
-class Car():
-	"""Uma tentativa simples de representar um carro."""
-	def __init__(self, marca, modelo, ano):
-		"""Inicializa os atributos que descrevem um carro."""
-		self.marca = marca
-		self.modelo = modelo
-		self.ano = ano
-		# definindo um valor default para um atributo
-		self.leitura_hodometro = 0
+Vamos importar a classe Car do módulo car.py e criar uma classe-filha
+EletricCar.'''
 
 
-	# 1	
-	def obter_descricao_carro(self):
-		"""Devolve um nome descritivo, formatado de modo elegante."""
-		nome_completo = f'{str(self.ano)} {self.marca} {self.modelo}'
-
-		return nome_completo.title()
-
-	
-	# 2	
-	def ler_hodometro(self):
-		"""Exibe uma frase que mostra a milhagem do carro."""
-		print(f'Este carro possui {self.leitura_hodometro} quilômetros rodados.')
-
-	
-	# 3
-	def atualizar_hodometro(self, quilometragem):
-		"""Define o valor de leitura do hodômetro com o valor especificado.
-		   Rejeita a alteração se for tentativa de definir um valor menor para 
-		   o hodômetro.
-		"""
-		if quilometragem >= self.leitura_hodometro:
-			self.leitura_hodometro = quilometragem
-		else:
-			print('Você não pode reduzir o valor da quilometragem!')
-
-
-	# 4
-	def incrementando_valores(self, km):
-		""" Soma a quantidade especificada ao valor de leitura do hodômetro."""
-		if km > 0:
-			self.leitura_hodometro += km
-		else:
-			print('Você não pode reduzir o valor da quilometragem!')
-
-'''
-
-# 1. Importando o módulo no qual está inserida a class Car.
 from car import Car
+from battery import Bateria
 
-''' A função super() indica que a classe-pai é uma superclasse e classe filha
-uma subclasse. Ela faz a chamada ao método __init__ da classe pai
-e confere todos os atributos da classe-pai.'''
 
-# 2. Criando uma nova classe que herdará os atributos e métodos da classe-pai Car
 class EletricCar(Car):
 	""" Representa aspectos específicos de veículos elétricos."""
 	def __init__(self, marca, modelo, ano):
 		"""Inicializa os atributos da classe-pai."""
 		super().__init__(marca, modelo, ano)
-		# definindo atributos e métodos da subclasse
-		self.bateria = 70
+		self.bateria = Bateria()
 
 
-	def descricao_bateria(self):
-		"""Exibe uma frase que descreve a capacidade da bateria."""
-		print(f'Este carro tem uma bateria de {self.bateria}-KWh')
+	def abastecer(self):
+		"""Um carro elétrico não precisa de um tanque de combustível."""
+		print('Este carro é elétrico e não precisa de combustível.')
 
-
+	    
 if __name__ == '__main__':
 	meu_tesla = EletricCar('tesla', 'modelo s', 2016)
 
 	print(meu_tesla.obter_descricao_carro())
-	meu_tesla.descricao_bateria()
+
+	#Saída:
+	#2016 Tesla Modelo S
+
+	meu_tesla.abastecer()
+	meu_tesla.bateria.especificar_bateria()
+	meu_tesla.bateria.obter_autonomia()
+
+''' A função super() indica que a classe-pai é uma superclasse e classe filha
+uma subclasse. Ela faz a chamada ao método __init__ da classe pai
+e confere todos os atributos da classe-pai.'''
+
+
+'''Sobreescrevendo métodos da classe-pai
+		
+Pode ser que algum método da classe-pai não se enquadre no que se quer modelar
+com a classe-filha. É possível sobreescrever tal método, apenas definindo um 
+método na classe-filha com o mesmo nome do método da classe-pai.
+
+Exemplo:
+
+Há um método na classe-pai Car chamado abastecer().
+Um carro elétrico não precisa de um tanque de combustível, logo o metódo 
+pode ser sobreescrito.'''
+
+
+'''Instâncias como atributos
+
+Quando a quantidade de atributos e métodos começam a ficar extensos, 
+uma maneira prática de otimizar a manutenção do código, é dividí-lo 
+em partes menores.
+
+Exemplo:
+Atributos e métodos relacionados à bateria do nosso carra elétrico, 
+podem ser transferidos para uma classe chamada Bateria e assim usar
+uma instância de Bateria como atributo da classe EletricCar sem que 
+está fique entulhada de código. 
+
+Para isso importamos o módulo battery.py no qual a classe Bateria está.'''
+

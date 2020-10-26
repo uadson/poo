@@ -10,6 +10,7 @@ class Car():
 		self.ano = ano
 		# definindo um valor default para um atributo
 		self.leitura_hodometro = 0
+		self.tanque = 0
 
 
 	# 1	
@@ -46,6 +47,16 @@ class Car():
 		else:
 			print('Você não pode reduzir o valor da quilometragem!')
 
+
+	# 5
+	def abastecer(self, litros):
+		""" Define uma quantidade de combustível para abastecimentos."""
+		if litros >= 0 and litros < 40:
+			self.tanque = litros
+			print(f'Automóvel abastecido com {self.tanque} litros de combustível')
+		else:
+			print('Você precisa abastecer!')
+			print('Tanque de combustível com capacidade para 40 litros.')
 
 if __name__ == '__main__':
 	meu_carro = Car('honda', 'hrv', 2020)
@@ -95,3 +106,9 @@ if __name__ == '__main__':
 	#2013 Subaru Outback
 	#Este carro possui 23500 quilômetros rodados.
 	#Este carro possui 23600 quilômetros rodados.
+
+	meu_carro.abastecer(35)
+
+	#Saída:
+	# Automóvel abastecido com 35 litros de combustível.
+
