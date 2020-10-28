@@ -26,7 +26,6 @@ class EletricCar(Car):
 		"""Um carro elétrico não precisa de um tanque de combustível."""
 		print('Este carro é elétrico e não precisa de combustível.')
 
-	    
 if __name__ == '__main__':
 	meu_tesla = EletricCar('tesla', 'modelo s', 2016)
 
@@ -38,6 +37,7 @@ if __name__ == '__main__':
 	meu_tesla.abastecer()
 	meu_tesla.bateria.especificar_bateria()
 	meu_tesla.bateria.obter_autonomia()
+	meu_tesla.bateria.atualizar_bateria()
 
 ''' A função super() indica que a classe-pai é uma superclasse e classe filha
 uma subclasse. Ela faz a chamada ao método __init__ da classe pai

@@ -25,4 +25,8 @@ quilômetros com a carga da bateria completa.'''
 		print(message)
 
 
-	
+	def atualizar_bateria(self):
+		if self.capacidade != 85:
+			self.capacidade = 85
+
+		print(f'Este carro tem uma bateria de capacidade de {self.capacidade}-KWh')
