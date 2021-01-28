@@ -26,3 +26,15 @@ if __name__ == '__main__':
 
     for item in objetoLista.itens:
         print(item.nome)
+
+'''
+output
+
+Lista de Compras
+
+Arroz
+Feijão
+Carne
+Tomate
+Batata
+'''
