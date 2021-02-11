@@ -1,5 +1,6 @@
 class Pessoa:
     olhos = 2
+    garras = 0
 
     def __init__(self, *filhos, nome=None, idade=37):
         self.nome = nome
@@ -26,10 +27,15 @@ if __name__ == '__main__':
     uadson = Pessoa(nome='Uadson')
     emile = Pessoa(uadson, nome='Emile')
 
+    Pessoa.olhos = 3
+    print(emile.olhos)
     print(Pessoa.cumprimentar(uadson))
     print(id(uadson))
     print(uadson.cumprimentar())
     print(uadson.nome)
+    # atributo dinâmico
+    uadson.sobrenome = 'Feitosa'
+    print(uadson.sobrenome)
     print(uadson.idade)
     for filho in emile.filhos:
         print(filho.nome)
@@ -59,3 +65,48 @@ if __name__ == '__main__':
     print(isinstance(pessoa, Pessoa))
     print(isinstance(pessoa, Homem))
 
+    #atributo especial para conferir todas os atributos de instância
+    # __dict__
+
+    print()
+    print(uadson.__dict__)
+    print(emile.__dict__)
+
+    # removendo atributo dinâmico
+    del emile.filhos
+    print(emile.__dict__)
+    print(castro.__dict__)
+
+'''
+OUTPUT
+
+3
+Olá 140292668794528
+140292668794528
+Olá 140292668794528
+Uadson
+Feitosa
+37
+Uadson
+42
+<class '__main__.Pessoa'> - olhos 3
+
+Olá 140292668794288
+140292668794288
+Olá 140292668794288
+Castro
+37
+Uadson Emile 
+ 42
+<class '__main__.Homem'> - olhos 3
+
+True
+True
+True
+False
+
+{'nome': 'Uadson', 'idade': 37, 'filhos': [], 'sobrenome': 'Feitosa'}
+{'nome': 'Emile', 'idade': 37, 'filhos': [<__main__.Pessoa object at 0x7f986eb026a0>]}
+{'nome': 'Emile', 'idade': 37}
+{'nome': 'Castro', 'idade': 37, 'filhos': [<__main__.Pessoa object at 0x7f986eb026a0>, <__main__.Pessoa object at 0x7f986eb02640>]}
+'''
