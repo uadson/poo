@@ -8,7 +8,7 @@ class Pessoa:
         self.filhos = list(filhos)
 
     def cumprimentar(self):
-        return f'Olá {id(self)}'
+        return f'Olá, meu nome é {self.nome}.'
 
     @staticmethod
     def metodo_estatico():
@@ -81,9 +81,9 @@ if __name__ == '__main__':
 OUTPUT
 
 3
-Olá 140292668794528
-140292668794528
-Olá 140292668794528
+Olá, meu nome é Uadson.
+140270192883504
+Olá, meu nome é Uadson.
 Uadson
 Feitosa
 37
@@ -91,9 +91,9 @@ Uadson
 42
 <class '__main__.Pessoa'> - olhos 3
 
-Olá 140292668794288
-140292668794288
-Olá 140292668794288
+Olá, meu nome é Castro.
+140270192883264
+Olá, meu nome é Castro.
 Castro
 37
 Uadson Emile 
@@ -106,7 +106,7 @@ True
 False
 
 {'nome': 'Uadson', 'idade': 37, 'filhos': [], 'sobrenome': 'Feitosa'}
-{'nome': 'Emile', 'idade': 37, 'filhos': [<__main__.Pessoa object at 0x7f986eb026a0>]}
+{'nome': 'Emile', 'idade': 37, 'filhos': [<__main__.Pessoa object at 0x7f933304f730>]}
 {'nome': 'Emile', 'idade': 37}
-{'nome': 'Castro', 'idade': 37, 'filhos': [<__main__.Pessoa object at 0x7f986eb026a0>, <__main__.Pessoa object at 0x7f986eb02640>]}
+{'nome': 'Castro', 'idade': 37, 'filhos': [<__main__.Pessoa object at 0x7f933304f730>, <__main__.Pessoa object at 0x7f933304f6d0>]}
 '''
