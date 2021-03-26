@@ -37,7 +37,7 @@ class Cliente:
         
         print(f'{valor} depositado com sucesso!')
         
-        return
+        return valor
 
     def sacar(self):
         pass
