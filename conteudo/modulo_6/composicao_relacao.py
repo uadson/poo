@@ -49,7 +49,7 @@ class Carro:
         return f'{self.motor.ligar()} Carro {self.marca} {self.modelo} pronto para dirigir!'
 
 
-# Agregação
+# Agregação / Relação
 class Biblioteca:
     def __init__(self, nome):
         """

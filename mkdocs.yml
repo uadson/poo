@@ -7,6 +7,7 @@ nav:
       - Herança: heranca.md
       - Polimorfismo: polimorfismo.md
       - Composicão e Agregação: composicao_relacao.md
+      - SOLID: solid.md
 
 theme:
   name: material

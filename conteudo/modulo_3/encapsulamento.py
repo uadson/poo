@@ -11,9 +11,9 @@ class Encapsulamento:
 
         Args:
 
-        publico (str): Um atributo publico, não será encapsulado.
-        protegido (str): Um atributo que será encapsulado.
-        privado (str): Um atributo que será encapsulado.
+            publico (str): Um atributo publico, não será encapsulado.
+            protegido (str): Um atributo que será encapsulado.
+            privado (str): Um atributo que será encapsulado.
         """
         # Atributos de instância
         # Atributo público

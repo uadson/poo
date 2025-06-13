@@ -19,7 +19,7 @@ docs = [
 
 [tool.ruff]
 line-length = 120
-extend-exclude = ['migrations']
+extend-exclude = ['migrations', '.venv', 'build', 'dist', 'docs', 'tests', '.vscode']
 
 [tool.ruff.lint]
 preview = true
