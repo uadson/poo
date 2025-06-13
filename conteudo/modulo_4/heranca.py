@@ -23,7 +23,7 @@ class Animal:
 
             value (str): Som do animal.
         """
-        raise NotImplementedError("Subclasses devem implementar este método.")
+        raise NotImplementedError('Subclasses devem implementar este método.')
 
 
 # Subclasse ou classe Filha
@@ -52,7 +52,7 @@ class Cachorro(Animal):
 
             value (str): Som do cachorro.
         """
-        return f"{self.nome} late: Au Au"
+        return f'{self.nome} late: Au Au'
 
 
 # Subclasse ou classe Filha
@@ -70,7 +70,7 @@ class Gato(Animal):
 
             value (str): Som do gato.
         """
-        return f"{self.nome} mia: Miau Miau"
+        return f'{self.nome} mia: Miau Miau'
 
 
 # Herança múltipla
@@ -89,7 +89,7 @@ class Voa:
 
             value (str): Mensagem de voo.
         """
-        return "Este animal pode voar."
+        return 'Este animal pode voar.'
 
 
 class Nada:
@@ -107,7 +107,7 @@ class Nada:
 
             value (str): Mensagem de natação.
         """
-        return "Este animal pode nadar."
+        return 'Este animal pode nadar.'
 
 
 class Pato(Animal, Voa, Nada):
@@ -135,15 +135,15 @@ class Pato(Animal, Voa, Nada):
 
             value (str): Som do pato.
         """
-        return f"{self.nome} grasna: Quack Quack"
+        return f'{self.nome} grasna: Quack Quack'
 
 
 # Exemplo de uso das classes
-if __name__ == "__main__":
+if __name__ == '__main__':
     # Criando instâncias das classes
-    cachorro = Cachorro("Rex", "Labrador")
-    gato = Gato("Mia")
-    pato = Pato("Donald")
+    cachorro = Cachorro('Rex', 'Labrador')
+    gato = Gato('Mia')
+    pato = Pato('Donald')
 
     # Chamando os métodos das instâncias
     print(cachorro.fazer_som())  # Rex late: Au Au

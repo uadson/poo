@@ -46,3 +46,14 @@ Protege o estado interno do objeto de acessos e modificações indesejadas.
 - **Abstração**: Focar no essencial e ignorar os detalhes irrelevantes. Em POO, envolve criar classes que representam conceitos gerais, definindo uma interface comum sem se preocupar com as implementações específicas.
 - **Classes Abstratas**: Classes que não podem ser instanciadas diretamente e que contêm um ou mais métodos abstratos (métodos sem implementação). Forçam subclasses a fornecerem a implementação.
 - **Interfaces (Protocolos em Python)**: Um contrato que define um conjunto de métodos que uma classe deve implementar. Em Python, geralmente são implícitas via Duck Typing ou explícitas via typing.Protocol ou abc.ABC.
+
+# Módulo 6: Composição e Relações entre Objetos
+
+## Conceitos Fundamentais:
+- **Composição**: Uma classe contém instâncias de outras classes como seus atributos. Modela a relação "tem um".
+- **Agregação**: Um tipo mais fraco de composição, onde os objetos componentes podem existir independentemente do objeto que os contém.
+- **Vantagens da Composição sobre Herança**:
+    - **Maior flexibilidade**: permite mudanças na composição em tempo de execução.
+    - **Menor acoplamento**: as classes não estão tão rigidamente ligadas.
+    - **Maior reutilização de código**: um componente pode ser reutilizado em várias classes.
+    - **Evita o "problema do diamante" da herança múltipla.**

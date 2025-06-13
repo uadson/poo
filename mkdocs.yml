@@ -6,6 +6,7 @@ nav:
       - Encapsulamento: encapsulamento.md
       - Herança: heranca.md
       - Polimorfismo: polimorfismo.md
+      - Composicão e Agregação: composicao_relacao.md
 
 theme:
   name: material

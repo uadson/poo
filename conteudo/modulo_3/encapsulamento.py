@@ -32,7 +32,7 @@ class Encapsulamento:
 
             value (str): O valor do atributo público.
         """
-        return f"Valor público: {self.publico}"
+        return f'Valor público: {self.publico}'
 
     def _metodo_protegido(self):
         """
@@ -42,7 +42,7 @@ class Encapsulamento:
 
             value (str): O valor do atributo protegido.
         """
-        return f"Valor protegido: {self._protegido}"
+        return f'Valor protegido: {self._protegido}'
 
     def __metodo_privado(self):
         """
@@ -52,7 +52,7 @@ class Encapsulamento:
 
             value (int): O valor do atributo privado.
         """
-        return f"Valor privado: {self.__privado}"
+        return f'Valor privado: {self.__privado}'
 
     # Propriedades (Getters e Setters)
     @property
@@ -68,13 +68,13 @@ class Encapsulamento:
         if valor > 0:
             self.__privado = valor
         else:
-            print("O valor do atributo privado deve ser maior que zero.")
+            print('O valor do atributo privado deve ser maior que zero.')
 
 
 # Exemplo de uso da classe
-if __name__ == "__main__":
+if __name__ == '__main__':
     # Criando uma instância da classe
-    encapsulamento = Encapsulamento("Atributo Público", "Atributo Protegido", 10)
+    encapsulamento = Encapsulamento('Atributo Público', 'Atributo Protegido', 10)
 
     # Acessando o atributo público
     print(encapsulamento.metodo_publico())
