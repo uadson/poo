@@ -1,0 +1,16 @@
+site_name: Mini curso de programação orientada a objetos
+nav:
+  - Home: index.md
+  - Seções:
+      - Classes e Objetos: classes_e_objetos.md
+      - Encapsulamento: encapsulamento.md
+      - Herança: heranca.md
+      - Polimorfismo: polimorfismo.md
+
+theme:
+  name: material
+
+plugins:
+  - search
+  - mkdocstrings:
+      default_handler: python
