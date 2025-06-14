@@ -1,1 +1,0 @@
-:::conteudo.modulo_7.solid

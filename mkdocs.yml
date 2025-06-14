@@ -1,18 +1,64 @@
-site_name: Mini curso de programação orientada a objetos
-nav:
-  - Home: index.md
-  - Seções:
-      - Classes e Objetos: classes_e_objetos.md
-      - Encapsulamento: encapsulamento.md
-      - Herança: heranca.md
-      - Polimorfismo: polimorfismo.md
-      - Composicão e Agregação: composicao_relacao.md
-      - SOLID: solid.md
+site_name: Programação Orientada a Objetos (POO) com Python
+site_url: https://uadson.github.io/poo/
+site_author: Uadson Feitosa
 
 theme:
   name: material
+  language: pt-BR
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.top
+    - header.autohide
+    - content.code.copy
+  palette:
+    scheme: default
+    primary: teal
+    accent: light blue
+  font:
+    text: Roboto
+    code: Roboto Mono
+  icon:
+    repo: fontawesome/brands/github
+    link: https://github.com/uadson/poo
+
+nav:
+  - Início: index.md
+  - Conteúdo:
+      - Classes e Objetos: content/classes_e_objetos.md
+      - Encapsulamento: content/encapsulamento.md
+      - Herança: content/heranca.md
+      - Polimorfismo: content/polimorfismo.md
+      - Composição e Agregação: content/composicao_relacao.md
+      - SOLID: content/solid.md
+  - Sobre: about.md
+
+copyright: Copyright &copy; 2025 Uadson Feitosa | Licença MIT.
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/uadson
+      name: Github
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/uadsonfeitosa
+      name: LinkedIn
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc:
+      permalink: true
+  - footnotes
+  - def_list
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.tabbed
 
 plugins:
   - search
   - mkdocstrings:
       default_handler: python
+
+repo_url: https://github.com/uadson/poo
+repo_name: uadson/poo
