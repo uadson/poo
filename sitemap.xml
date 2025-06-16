@@ -2,34 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://uadson.github.io/poo/</loc>
-         <lastmod>2025-06-14</lastmod>
+         <lastmod>2025-06-16</lastmod>
     </url>
     <url>
          <loc>https://uadson.github.io/poo/about/</loc>
-         <lastmod>2025-06-14</lastmod>
+         <lastmod>2025-06-16</lastmod>
     </url>
     <url>
-         <loc>https://uadson.github.io/poo/content/classes_e_objetos/</loc>
-         <lastmod>2025-06-14</lastmod>
+         <loc>https://uadson.github.io/poo/content/modules/1/classes_e_objetos/</loc>
+         <lastmod>2025-06-16</lastmod>
     </url>
     <url>
-         <loc>https://uadson.github.io/poo/content/composicao_relacao/</loc>
-         <lastmod>2025-06-14</lastmod>
+         <loc>https://uadson.github.io/poo/content/modules/1/composicao_relacao/</loc>
+         <lastmod>2025-06-16</lastmod>
     </url>
     <url>
-         <loc>https://uadson.github.io/poo/content/encapsulamento/</loc>
-         <lastmod>2025-06-14</lastmod>
+         <loc>https://uadson.github.io/poo/content/modules/1/encapsulamento/</loc>
+         <lastmod>2025-06-16</lastmod>
     </url>
     <url>
-         <loc>https://uadson.github.io/poo/content/heranca/</loc>
-         <lastmod>2025-06-14</lastmod>
+         <loc>https://uadson.github.io/poo/content/modules/1/exemplo/</loc>
+         <lastmod>2025-06-16</lastmod>
     </url>
     <url>
-         <loc>https://uadson.github.io/poo/content/polimorfismo/</loc>
-         <lastmod>2025-06-14</lastmod>
+         <loc>https://uadson.github.io/poo/content/modules/1/heranca/</loc>
+         <lastmod>2025-06-16</lastmod>
     </url>
     <url>
-         <loc>https://uadson.github.io/poo/content/solid/</loc>
-         <lastmod>2025-06-14</lastmod>
+         <loc>https://uadson.github.io/poo/content/modules/1/polimorfismo/</loc>
+         <lastmod>2025-06-16</lastmod>
+    </url>
+    <url>
+         <loc>https://uadson.github.io/poo/content/modules/2/solid/</loc>
+         <lastmod>2025-06-16</lastmod>
     </url>
 </urlset>
