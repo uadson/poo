@@ -10,4 +10,4 @@ Conjunto de cinco princípios de design de software orientados a objetos, introd
 - I (Interface Segregation Principle - ISP): Clientes não devem ser forçados a depender de interfaces que não utilizam. (Interfaces grandes e monolíticas devem ser divididas em interfaces menores e mais específicas).
 - D (Dependency Inversion Principle - DIP): Módulos de alto nível não devem depender de módulos de baixo nível. Ambos devem depender de abstrações. Abstrações não devem depender de detalhes. Detalhes devem depender de abstrações.
 
-:::conteudo.modulo_7.solid
+:::conteudo.modulo_2.solid

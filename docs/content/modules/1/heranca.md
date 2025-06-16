@@ -7,4 +7,4 @@
 - **Herança Múltipla**: Uma classe pode herdar de múltiplas superclasses.
 - **MRO (Method Resolution Order)**: A ordem em que o Python procura métodos em uma hierarquia de herança múltipla.
 
-:::conteudo.modulo_4.heranca
+:::conteudo.modulo_1.heranca

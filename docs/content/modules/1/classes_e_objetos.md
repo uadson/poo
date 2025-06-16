@@ -11,4 +11,4 @@
     - **Método de Classe (@classmethod)**: Opera sobre a classe e seus atributos de classe.
     - **Método Estático (@staticmethod)**: Não opera sobre a instância nem sobre a classe; é uma função utilitária dentro do escopo da classe.
 
-::: conteudo.modulo_2.classes_e_objetos
+::: conteudo.modulo_1.classes_e_objetos

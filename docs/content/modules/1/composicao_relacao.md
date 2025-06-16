@@ -9,4 +9,4 @@
     - **Maior reutilização de código**: um componente pode ser reutilizado em várias classes.
     - **Evita o "problema do diamante" da herança múltipla.**
 
-:::conteudo.modulo_6.composicao_relacao
+:::conteudo.modulo_1.composicao_relacao

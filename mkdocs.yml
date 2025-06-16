@@ -25,12 +25,15 @@ theme:
 nav:
   - Início: index.md
   - Conteúdo:
-      - Classes e Objetos: content/classes_e_objetos.md
-      - Encapsulamento: content/encapsulamento.md
-      - Herança: content/heranca.md
-      - Polimorfismo: content/polimorfismo.md
-      - Composição e Agregação: content/composicao_relacao.md
-      - SOLID: content/solid.md
+      - Parte 1:
+          - Classes e Objetos: content/modules/1/classes_e_objetos.md
+          - Encapsulamento: content/modules/1/encapsulamento.md
+          - Herança: content/modules/1/heranca.md
+          - Polimorfismo: content/modules/1/polimorfismo.md
+          - Composição e Agregação: content/modules/1/composicao_relacao.md
+          - Exemplo: content/modules/1/exemplo.md
+      - Parte 2:
+          - SOLID: content/modules/2/solid.md
   - Sobre: about.md
 
 copyright: Copyright &copy; 2025 Uadson Feitosa | Licença MIT.

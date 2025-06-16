@@ -6,4 +6,4 @@
 - **Classes Abstratas**: Classes que não podem ser instanciadas diretamente e que contêm um ou mais métodos abstratos (métodos sem implementação). Forçam subclasses a fornecerem a implementação.
 - **Interfaces (Protocolos em Python)**: Um contrato que define um conjunto de métodos que uma classe deve implementar. Em Python, geralmente são implícitas via Duck Typing ou explícitas via typing.Protocol ou abc.ABC.
 
-:::conteudo.modulo_5.polimorfismo_abstracao
+:::conteudo.modulo_1.polimorfismo_abstracao
