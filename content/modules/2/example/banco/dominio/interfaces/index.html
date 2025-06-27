@@ -10,28 +10,28 @@
         <meta name="author" content="Uadson Feitosa">
       
       
-        <link rel="canonical" href="https://uadson.github.io/poo/content/modules/1/classes_e_objetos/">
+        <link rel="canonical" href="https://uadson.github.io/poo/content/modules/2/example/banco/dominio/interfaces/">
       
       
-        <link rel="prev" href="../../../..">
+        <link rel="prev" href="../entidades/">
       
       
-        <link rel="next" href="../encapsulamento/">
+        <link rel="next" href="../../infra/repo_memoria/">
       
       
-      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <link rel="icon" href="../../../../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
     
     
       
-        <title>Classes e Objetos - Programação Orientada a Objetos (POO) com Python</title>
+        <title>interfaces - Programação Orientada a Objetos (POO) com Python</title>
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.342714a4.min.css">
+      <link rel="stylesheet" href="../../../../../../../assets/stylesheets/main.342714a4.min.css">
       
         
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../../../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -50,9 +50,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../../assets/_mkdocstrings.css">
+      <link rel="stylesheet" href="../../../../../../../assets/_mkdocstrings.css">
     
-    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../../../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#classes-e-objetos" class="md-skip">
+        <a href="#abstracoes-repositorio-operacoes-contarepositoryinterface-clienterepositoryinterface" class="md-skip">
           Pular para conteúdo
         </a>
       
@@ -90,7 +90,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Cabeçalho">
-    <a href="../../../.." title="Programação Orientada a Objetos (POO) com Python" class="md-header__button md-logo" aria-label="Programação Orientada a Objetos (POO) com Python" data-md-component="logo">
+    <a href="../../../../../../.." title="Programação Orientada a Objetos (POO) com Python" class="md-header__button md-logo" aria-label="Programação Orientada a Objetos (POO) com Python" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Classes e Objetos
+              interfaces
             
           </span>
         </div>
@@ -195,7 +195,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../.." class="md-tabs__link">
+      <a href="../../../../../../.." class="md-tabs__link">
         
   
   
@@ -227,7 +227,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../../../../../1/classes_e_objetos/" class="md-tabs__link">
           
   
   
@@ -248,7 +248,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../../../about/" class="md-tabs__link">
+      <a href="../../../../../../../about/" class="md-tabs__link">
         
   
   
@@ -283,7 +283,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegação" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../.." title="Programação Orientada a Objetos (POO) com Python" class="md-nav__button md-logo" aria-label="Programação Orientada a Objetos (POO) com Python" data-md-component="logo">
+    <a href="../../../../../../.." title="Programação Orientada a Objetos (POO) com Python" class="md-nav__button md-logo" aria-label="Programação Orientada a Objetos (POO) com Python" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -313,7 +313,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../.." class="md-nav__link">
+      <a href="../../../../../../.." class="md-nav__link">
         
   
   
@@ -378,8 +378,6 @@
                 
   
   
-    
-  
   
   
     
@@ -390,11 +388,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
         
           
           <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
@@ -410,7 +408,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2_1">
             <span class="md-nav__icon md-icon"></span>
             Parte 1
@@ -421,32 +419,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Classes e Objetos
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../../../../1/classes_e_objetos/" class="md-nav__link">
         
   
   
@@ -457,95 +433,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Índice">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Índice
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#conceitos-fundamentais" class="md-nav__link">
-    <span class="md-ellipsis">
-      Conceitos Fundamentais:
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conteudo.modulo_1.classes_e_objetos" class="md-nav__link">
-    <span class="md-ellipsis">
-      classes_e_objetos
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conteudo.modulo_1.classes_e_objetos.MinhaClasse" class="md-nav__link">
-    <span class="md-ellipsis">
-      MinhaClasse
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="MinhaClasse">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#conteudo.modulo_1.classes_e_objetos.MinhaClasse.__init__" class="md-nav__link">
-    <span class="md-ellipsis">
-      __init__
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#conteudo.modulo_1.classes_e_objetos.MinhaClasse.metodo_de_classe" class="md-nav__link">
-    <span class="md-ellipsis">
-      metodo_de_classe
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#conteudo.modulo_1.classes_e_objetos.MinhaClasse.metodo_de_instancia" class="md-nav__link">
-    <span class="md-ellipsis">
-      metodo_de_instancia
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#conteudo.modulo_1.classes_e_objetos.MinhaClasse.metodo_estatico" class="md-nav__link">
-    <span class="md-ellipsis">
-      metodo_estatico
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -558,7 +445,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../encapsulamento/" class="md-nav__link">
+      <a href="../../../../../1/encapsulamento/" class="md-nav__link">
         
   
   
@@ -581,7 +468,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../heranca/" class="md-nav__link">
+      <a href="../../../../../1/heranca/" class="md-nav__link">
         
   
   
@@ -604,7 +491,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../polimorfismo/" class="md-nav__link">
+      <a href="../../../../../1/polimorfismo/" class="md-nav__link">
         
   
   
@@ -627,7 +514,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../composicao_relacao/" class="md-nav__link">
+      <a href="../../../../../1/composicao_relacao/" class="md-nav__link">
         
   
   
@@ -650,7 +537,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../exemplo/" class="md-nav__link">
+      <a href="../../../../../1/exemplo/" class="md-nav__link">
         
   
   
@@ -678,6 +565,8 @@
                 
   
   
+    
+  
   
   
     
@@ -688,11 +577,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
@@ -708,7 +597,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_2">
             <span class="md-nav__icon md-icon"></span>
             Parte 2
@@ -722,7 +611,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../2/solid/" class="md-nav__link">
+      <a href="../../../../solid/" class="md-nav__link">
         
   
   
@@ -742,6 +631,8 @@
                 
   
   
+    
+  
   
   
     
@@ -752,11 +643,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2_2_2" id="__nav_2_2_2_label" tabindex="0">
@@ -772,7 +663,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_2_2">
             <span class="md-nav__icon md-icon"></span>
             Exemplo
@@ -786,7 +677,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../2/example/project/projeto/" class="md-nav__link">
+      <a href="../../../project/projeto/" class="md-nav__link">
         
   
   
@@ -806,6 +697,8 @@
                 
   
   
+    
+  
   
   
     
@@ -816,11 +709,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_2_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_2_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2_2_2_2" id="__nav_2_2_2_2_label" tabindex="0">
@@ -836,7 +729,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_2_2_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_2_2_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_2_2_2">
             <span class="md-nav__icon md-icon"></span>
             banco
@@ -847,6 +740,8 @@
                 
   
   
+    
+  
   
   
     
@@ -857,11 +752,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_2_2_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_2_2_1" checked>
         
           
           <label class="md-nav__link" for="__nav_2_2_2_2_1" id="__nav_2_2_2_2_1_label" tabindex="0">
@@ -877,7 +772,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_2_2_2_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_2_2_2_2_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_2_2_2_1">
             <span class="md-nav__icon md-icon"></span>
             dominio
@@ -891,7 +786,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../2/example/banco/dominio/entidades/" class="md-nav__link">
+      <a href="../entidades/" class="md-nav__link">
         
   
   
@@ -911,10 +806,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../2/example/banco/dominio/interfaces/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    interfaces
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -925,6 +842,101 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Índice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Índice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#conteudo.modulo_2.exemplo.banco.dominio.interfaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      interfaces
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conteudo.modulo_2.exemplo.banco.dominio.interfaces.ClienteRepositoryInterface" class="md-nav__link">
+    <span class="md-ellipsis">
+      ClienteRepositoryInterface
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ClienteRepositoryInterface">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#conteudo.modulo_2.exemplo.banco.dominio.interfaces.ClienteRepositoryInterface.obter_cliente" class="md-nav__link">
+    <span class="md-ellipsis">
+      obter_cliente
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conteudo.modulo_2.exemplo.banco.dominio.interfaces.ClienteRepositoryInterface.salvar_cliente" class="md-nav__link">
+    <span class="md-ellipsis">
+      salvar_cliente
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conteudo.modulo_2.exemplo.banco.dominio.interfaces.ContaRepositoryInterface" class="md-nav__link">
+    <span class="md-ellipsis">
+      ContaRepositoryInterface
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ContaRepositoryInterface">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#conteudo.modulo_2.exemplo.banco.dominio.interfaces.ContaRepositoryInterface.obter_conta" class="md-nav__link">
+    <span class="md-ellipsis">
+      obter_conta
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conteudo.modulo_2.exemplo.banco.dominio.interfaces.ContaRepositoryInterface.salvar_conta" class="md-nav__link">
+    <span class="md-ellipsis">
+      salvar_conta
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -986,7 +998,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../2/example/banco/infra/repo_memoria/" class="md-nav__link">
+      <a href="../../infra/repo_memoria/" class="md-nav__link">
         
   
   
@@ -1017,7 +1029,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../2/example/banco/cli/" class="md-nav__link">
+      <a href="../../cli/" class="md-nav__link">
         
   
   
@@ -1071,7 +1083,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../about/" class="md-nav__link">
+      <a href="../../../../../../../about/" class="md-nav__link">
         
   
   
@@ -1113,64 +1125,70 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#conceitos-fundamentais" class="md-nav__link">
+  <a href="#conteudo.modulo_2.exemplo.banco.dominio.interfaces" class="md-nav__link">
     <span class="md-ellipsis">
-      Conceitos Fundamentais:
+      interfaces
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#conteudo.modulo_1.classes_e_objetos" class="md-nav__link">
+  <a href="#conteudo.modulo_2.exemplo.banco.dominio.interfaces.ClienteRepositoryInterface" class="md-nav__link">
     <span class="md-ellipsis">
-      classes_e_objetos
+      ClienteRepositoryInterface
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conteudo.modulo_1.classes_e_objetos.MinhaClasse" class="md-nav__link">
-    <span class="md-ellipsis">
-      MinhaClasse
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="MinhaClasse">
+    <nav class="md-nav" aria-label="ClienteRepositoryInterface">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#conteudo.modulo_1.classes_e_objetos.MinhaClasse.__init__" class="md-nav__link">
+  <a href="#conteudo.modulo_2.exemplo.banco.dominio.interfaces.ClienteRepositoryInterface.obter_cliente" class="md-nav__link">
     <span class="md-ellipsis">
-      __init__
+      obter_cliente
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#conteudo.modulo_1.classes_e_objetos.MinhaClasse.metodo_de_classe" class="md-nav__link">
+  <a href="#conteudo.modulo_2.exemplo.banco.dominio.interfaces.ClienteRepositoryInterface.salvar_cliente" class="md-nav__link">
     <span class="md-ellipsis">
-      metodo_de_classe
+      salvar_cliente
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conteudo.modulo_2.exemplo.banco.dominio.interfaces.ContaRepositoryInterface" class="md-nav__link">
+    <span class="md-ellipsis">
+      ContaRepositoryInterface
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ContaRepositoryInterface">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#conteudo.modulo_2.exemplo.banco.dominio.interfaces.ContaRepositoryInterface.obter_conta" class="md-nav__link">
+    <span class="md-ellipsis">
+      obter_conta
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#conteudo.modulo_1.classes_e_objetos.MinhaClasse.metodo_de_instancia" class="md-nav__link">
+  <a href="#conteudo.modulo_2.exemplo.banco.dominio.interfaces.ContaRepositoryInterface.salvar_conta" class="md-nav__link">
     <span class="md-ellipsis">
-      metodo_de_instancia
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#conteudo.modulo_1.classes_e_objetos.MinhaClasse.metodo_estatico" class="md-nav__link">
-    <span class="md-ellipsis">
-      metodo_estatico
+      salvar_conta
     </span>
   </a>
   
@@ -1200,30 +1218,14 @@
   
 
 
-<h1 id="classes-e-objetos">Classes e Objetos<a class="headerlink" href="#classes-e-objetos" title="Permanent link">&para;</a></h1>
-<h2 id="conceitos-fundamentais">Conceitos Fundamentais:<a class="headerlink" href="#conceitos-fundamentais" title="Permanent link">&para;</a></h2>
-<ul>
-<li><strong>Classe</strong>: Um blueprint ou molde para criar objetos. Define as características (atributos) e os comportamentos (métodos) que os objetos terão.</li>
-<li><strong>Objeto (ou Instância)</strong>: Uma ocorrência concreta de uma classe. Cada objeto é único, mas segue a estrutura da classe.</li>
-<li><strong>Atributo</strong>: Uma variável associada a uma classe ou objeto, que armazena dados.<ul>
-<li><strong>Atributo de Instância</strong>: Pertence a uma instância específica do objeto.</li>
-<li><strong>Atributo de Classe</strong>: Pertence à classe e é compartilhado por todas as instâncias.</li>
-</ul>
-</li>
-<li><strong>Método</strong>: Uma função associada a uma classe ou objeto, que define um comportamento.<ul>
-<li><strong>Método de Instância</strong>: Opera sobre os dados da instância.</li>
-<li><strong>Método de Classe (@classmethod)</strong>: Opera sobre a classe e seus atributos de classe.</li>
-<li><strong>Método Estático (@staticmethod)</strong>: Não opera sobre a instância nem sobre a classe; é uma função utilitária dentro do escopo da classe.</li>
-</ul>
-</li>
-</ul>
+<h1 id="abstracoes-repositorio-operacoes-contarepositoryinterface-clienterepositoryinterface">Abstrações (repositorio, operacoes) -&gt; ContaRepositoryInterface, ClienteRepositoryInterface<a class="headerlink" href="#abstracoes-repositorio-operacoes-contarepositoryinterface-clienterepositoryinterface" title="Permanent link">&para;</a></h1>
 
 
 <div class="doc doc-object doc-module">
 
 
 
-<a id="conteudo.modulo_1.classes_e_objetos"></a>
+<a id="conteudo.modulo_2.exemplo.banco.dominio.interfaces"></a>
     <div class="doc doc-contents first">
 
 
@@ -1247,19 +1249,19 @@
 
 
 
-<h2 id="conteudo.modulo_1.classes_e_objetos.MinhaClasse" class="doc doc-heading">
-            <code>MinhaClasse</code>
+<h2 id="conteudo.modulo_2.exemplo.banco.dominio.interfaces.ClienteRepositoryInterface" class="doc doc-heading">
+            <code>ClienteRepositoryInterface</code>
 
 
-<a href="#conteudo.modulo_1.classes_e_objetos.MinhaClasse" class="headerlink" title="Permanent link">&para;</a></h2>
+<a href="#conteudo.modulo_2.exemplo.banco.dominio.interfaces.ClienteRepositoryInterface" class="headerlink" title="Permanent link">&para;</a></h2>
 
 
     <div class="doc doc-contents ">
+            <p class="doc doc-class-bases">
+              Bases: <code><span title="abc.ABC">ABC</span></code></p>
 
 
-        <p>Um blueprint ou molde para criar objetos.
-Define as características (atributos) e os
-comportamentos (métodos) que os objetos podem ter.</p>
+        <p>Interface para operações de persistência de clientes.</p>
 
 
 
@@ -1268,36 +1270,8 @@ comportamentos (métodos) que os objetos podem ter.</p>
 
 
               <details class="quote">
-                <summary>Source code in <code>conteudo/modulo_1/classes_e_objetos.py</code></summary>
-                <div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span>
-<span class="normal">16</span>
-<span class="normal">17</span>
-<span class="normal">18</span>
-<span class="normal">19</span>
-<span class="normal">20</span>
-<span class="normal">21</span>
-<span class="normal">22</span>
-<span class="normal">23</span>
-<span class="normal">24</span>
-<span class="normal">25</span>
-<span class="normal">26</span>
-<span class="normal">27</span>
-<span class="normal">28</span>
-<span class="normal">29</span>
+                <summary>Source code in <code>conteudo/modulo_2/exemplo/banco/dominio/interfaces.py</code></summary>
+                <div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">29</span>
 <span class="normal">30</span>
 <span class="normal">31</span>
 <span class="normal">32</span>
@@ -1319,75 +1293,29 @@ comportamentos (métodos) que os objetos podem ter.</p>
 <span class="normal">48</span>
 <span class="normal">49</span>
 <span class="normal">50</span>
-<span class="normal">51</span>
-<span class="normal">52</span>
-<span class="normal">53</span>
-<span class="normal">54</span>
-<span class="normal">55</span>
-<span class="normal">56</span>
-<span class="normal">57</span>
-<span class="normal">58</span>
-<span class="normal">59</span>
-<span class="normal">60</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">MinhaClasse</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Um blueprint ou molde para criar objetos.</span>
-<span class="sd">    Define as características (atributos) e os</span>
-<span class="sd">    comportamentos (métodos) que os objetos podem ter.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="normal">51</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">ClienteRepositoryInterface</span><span class="p">(</span><span class="n">ABC</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Interface para operações de persistência de clientes.&quot;&quot;&quot;</span>
 
-    <span class="c1"># Atributos de classe</span>
-    <span class="n">atributo_de_classe</span> <span class="o">=</span> <span class="s1">&#39;Este é um atributo de classe&#39;</span>
-
-    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">atributo_de_instancia</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">        Método construtor que inicializa os atributos de instância.</span>
+    <span class="nd">@abstractmethod</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">salvar_cliente</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">cliente</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Salva um cliente no repositório.</span>
 
 <span class="sd">        Args:</span>
-
-<span class="sd">            self: Referência à instância atual.</span>
-<span class="sd">            atributo_de_instancia (str): Um atributo específico para cada instância.</span>
+<span class="sd">            cliente (Cliente): Cliente a ser salvo.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">atributo_de_instancia</span> <span class="o">=</span> <span class="n">atributo_de_instancia</span>
+        <span class="k">pass</span>
 
-    <span class="k">def</span><span class="w"> </span><span class="nf">metodo_de_instancia</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">        Método que pode ser chamado em uma instância da classe.</span>
+    <span class="nd">@abstractmethod</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">obter_cliente</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">cpf</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Obtém um cliente pelo CPF.</span>
 
 <span class="sd">        Args:</span>
-
-<span class="sd">            self: Referência à instância atual.</span>
-
-<span class="sd">        Returns:</span>
-
-<span class="sd">            value (str): Uma string representando o comportamento do método.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="sa">f</span><span class="s1">&#39;Este é um método de instância. Atributo de instância: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">atributo_de_instancia</span><span class="si">}</span><span class="s1">&#39;</span>
-
-    <span class="nd">@classmethod</span>
-    <span class="k">def</span><span class="w"> </span><span class="nf">metodo_de_classe</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">        Método de classe que pode ser chamado na classe, não em uma instância.</span>
-
-<span class="sd">        Args:</span>
-
-<span class="sd">            cls: Referência à classe atual.</span>
+<span class="sd">            cpf (str): CPF do cliente.</span>
 
 <span class="sd">        Returns:</span>
-
-<span class="sd">            value (str): Uma string representando o comportamento do método de classe.</span>
+<span class="sd">            Cliente (Cliente): Cliente correspondente.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="sa">f</span><span class="s1">&#39;Este é um método de classe. Atributo de classe: </span><span class="si">{</span><span class="bp">cls</span><span class="o">.</span><span class="n">atributo_de_classe</span><span class="si">}</span><span class="s1">&#39;</span>
-
-    <span class="nd">@staticmethod</span>
-    <span class="k">def</span><span class="w"> </span><span class="nf">metodo_estatico</span><span class="p">():</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">        Método estático que não depende de instância ou classe.</span>
-
-<span class="sd">        Returns:</span>
-
-<span class="sd">            value (str): Uma string representando o comportamento do método estático.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">return</span> <span class="s1">&#39;Este é um método estático. Não depende de instância ou classe.&#39;</span>
+        <span class="k">pass</span>
 </code></pre></div></td></tr></table></div>
               </details>
 
@@ -1406,24 +1334,218 @@ comportamentos (métodos) que os objetos podem ter.</p>
 <div class="doc doc-object doc-function">
 
 
-<h3 id="conteudo.modulo_1.classes_e_objetos.MinhaClasse.__init__" class="doc doc-heading">
-            <code class=" language-python"><span class="fm">__init__</span><span class="p">(</span><span class="n">atributo_de_instancia</span><span class="p">)</span></code>
+<h3 id="conteudo.modulo_2.exemplo.banco.dominio.interfaces.ClienteRepositoryInterface.obter_cliente" class="doc doc-heading">
+            <code class=" language-python"><span class="n">obter_cliente</span><span class="p">(</span><span class="n">cpf</span><span class="p">)</span></code>
 
-<a href="#conteudo.modulo_1.classes_e_objetos.MinhaClasse.__init__" class="headerlink" title="Permanent link">&para;</a></h3>
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-abstractmethod"><code>abstractmethod</code></small>
+  </span>
+
+<a href="#conteudo.modulo_2.exemplo.banco.dominio.interfaces.ClienteRepositoryInterface.obter_cliente" class="headerlink" title="Permanent link">&para;</a></h3>
 
 
     <div class="doc doc-contents ">
 
-        <p>Método construtor que inicializa os atributos de instância.</p>
-<p>Args:</p>
-<div class="codehilite"><pre><span></span><code><span class="n">self</span><span class="o">:</span><span class="w"> </span><span class="n">Referência</span><span class="w"> </span><span class="err">à</span><span class="w"> </span><span class="n">instância</span><span class="w"> </span><span class="n">atual</span><span class="o">.</span>
-<span class="n">atributo_de_instancia</span><span class="w"> </span><span class="o">(</span><span class="n">str</span><span class="o">):</span><span class="w"> </span><span class="n">Um</span><span class="w"> </span><span class="n">atributo</span><span class="w"> </span><span class="n">específico</span><span class="w"> </span><span class="n">para</span><span class="w"> </span><span class="n">cada</span><span class="w"> </span><span class="n">instância</span><span class="o">.</span>
-</code></pre></div>
+        <p>Obtém um cliente pelo CPF.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>cpf</code>
+            </td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>CPF do cliente.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+<th>Name</th>          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+<td><code>Cliente</code></td>            <td>
+                  <code><span title="Cliente">Cliente</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Cliente correspondente.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
 
 
             <details class="quote">
-              <summary>Source code in <code>conteudo/modulo_1/classes_e_objetos.py</code></summary>
-              <div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">11</span>
+              <summary>Source code in <code>conteudo/modulo_2/exemplo/banco/dominio/interfaces.py</code></summary>
+              <div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@abstractmethod</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">obter_cliente</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">cpf</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Obtém um cliente pelo CPF.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        cpf (str): CPF do cliente.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Cliente (Cliente): Cliente correspondente.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">pass</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="conteudo.modulo_2.exemplo.banco.dominio.interfaces.ClienteRepositoryInterface.salvar_cliente" class="doc doc-heading">
+            <code class=" language-python"><span class="n">salvar_cliente</span><span class="p">(</span><span class="n">cliente</span><span class="p">)</span></code>
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-abstractmethod"><code>abstractmethod</code></small>
+  </span>
+
+<a href="#conteudo.modulo_2.exemplo.banco.dominio.interfaces.ClienteRepositoryInterface.salvar_cliente" class="headerlink" title="Permanent link">&para;</a></h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Salva um cliente no repositório.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>cliente</code>
+            </td>
+            <td>
+                  <code><span title="Cliente">Cliente</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Cliente a ser salvo.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+            <details class="quote">
+              <summary>Source code in <code>conteudo/modulo_2/exemplo/banco/dominio/interfaces.py</code></summary>
+              <div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@abstractmethod</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">salvar_cliente</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">cliente</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Salva um cliente no repositório.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        cliente (Cliente): Cliente a ser salvo.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">pass</span>
+</code></pre></div></td></tr></table></div>
+            </details>
+    </div>
+
+</div>
+
+
+
+  </div>
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h2 id="conteudo.modulo_2.exemplo.banco.dominio.interfaces.ContaRepositoryInterface" class="doc doc-heading">
+            <code>ContaRepositoryInterface</code>
+
+
+<a href="#conteudo.modulo_2.exemplo.banco.dominio.interfaces.ContaRepositoryInterface" class="headerlink" title="Permanent link">&para;</a></h2>
+
+
+    <div class="doc doc-contents ">
+            <p class="doc doc-class-bases">
+              Bases: <code><span title="abc.ABC">ABC</span></code></p>
+
+
+        <p>Interface para operações de persistência de contas.</p>
+
+
+
+
+
+
+
+              <details class="quote">
+                <summary>Source code in <code>conteudo/modulo_2/exemplo/banco/dominio/interfaces.py</code></summary>
+                <div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
 <span class="normal">12</span>
 <span class="normal">13</span>
 <span class="normal">14</span>
@@ -1432,130 +1554,145 @@ comportamentos (métodos) que os objetos podem ter.</p>
 <span class="normal">17</span>
 <span class="normal">18</span>
 <span class="normal">19</span>
-<span class="normal">20</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">atributo_de_instancia</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Método construtor que inicializa os atributos de instância.</span>
-
-<span class="sd">    Args:</span>
-
-<span class="sd">        self: Referência à instância atual.</span>
-<span class="sd">        atributo_de_instancia (str): Um atributo específico para cada instância.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">atributo_de_instancia</span> <span class="o">=</span> <span class="n">atributo_de_instancia</span>
-</code></pre></div></td></tr></table></div>
-            </details>
-    </div>
-
-</div>
-
-<div class="doc doc-object doc-function">
-
-
-<h3 id="conteudo.modulo_1.classes_e_objetos.MinhaClasse.metodo_de_classe" class="doc doc-heading">
-            <code class=" language-python"><span class="n">metodo_de_classe</span><span class="p">()</span></code>
-
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-classmethod"><code>classmethod</code></small>
-  </span>
-
-<a href="#conteudo.modulo_1.classes_e_objetos.MinhaClasse.metodo_de_classe" class="headerlink" title="Permanent link">&para;</a></h3>
-
-
-    <div class="doc doc-contents ">
-
-        <p>Método de classe que pode ser chamado na classe, não em uma instância.</p>
-<p>Args:</p>
-<div class="codehilite"><pre><span></span><code><span class="n">cls</span><span class="o">:</span><span class="w"> </span><span class="n">Referência</span><span class="w"> </span><span class="err">à</span><span class="w"> </span><span class="n">classe</span><span class="w"> </span><span class="n">atual</span><span class="o">.</span>
-</code></pre></div>
-
-<p>Returns:</p>
-<div class="codehilite"><pre><span></span><code><span class="nv">value</span><span class="w"> </span><span class="ss">(</span><span class="nv">str</span><span class="ss">)</span>:<span class="w"> </span><span class="nv">Uma</span><span class="w"> </span><span class="nv">string</span><span class="w"> </span><span class="nv">representando</span><span class="w"> </span><span class="nv">o</span><span class="w"> </span><span class="nv">comportamento</span><span class="w"> </span><span class="k">do</span><span class="w"> </span><span class="nv">m</span>é<span class="nv">todo</span><span class="w"> </span><span class="nv">de</span><span class="w"> </span><span class="nv">classe</span>.
-</code></pre></div>
-
-
-            <details class="quote">
-              <summary>Source code in <code>conteudo/modulo_1/classes_e_objetos.py</code></summary>
-              <div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">36</span>
-<span class="normal">37</span>
-<span class="normal">38</span>
-<span class="normal">39</span>
-<span class="normal">40</span>
-<span class="normal">41</span>
-<span class="normal">42</span>
-<span class="normal">43</span>
-<span class="normal">44</span>
-<span class="normal">45</span>
-<span class="normal">46</span>
-<span class="normal">47</span>
-<span class="normal">48</span>
-<span class="normal">49</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@classmethod</span>
-<span class="k">def</span><span class="w"> </span><span class="nf">metodo_de_classe</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Método de classe que pode ser chamado na classe, não em uma instância.</span>
-
-<span class="sd">    Args:</span>
-
-<span class="sd">        cls: Referência à classe atual.</span>
-
-<span class="sd">    Returns:</span>
-
-<span class="sd">        value (str): Uma string representando o comportamento do método de classe.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">return</span> <span class="sa">f</span><span class="s1">&#39;Este é um método de classe. Atributo de classe: </span><span class="si">{</span><span class="bp">cls</span><span class="o">.</span><span class="n">atributo_de_classe</span><span class="si">}</span><span class="s1">&#39;</span>
-</code></pre></div></td></tr></table></div>
-            </details>
-    </div>
-
-</div>
-
-<div class="doc doc-object doc-function">
-
-
-<h3 id="conteudo.modulo_1.classes_e_objetos.MinhaClasse.metodo_de_instancia" class="doc doc-heading">
-            <code class=" language-python"><span class="n">metodo_de_instancia</span><span class="p">()</span></code>
-
-<a href="#conteudo.modulo_1.classes_e_objetos.MinhaClasse.metodo_de_instancia" class="headerlink" title="Permanent link">&para;</a></h3>
-
-
-    <div class="doc doc-contents ">
-
-        <p>Método que pode ser chamado em uma instância da classe.</p>
-<p>Args:</p>
-<div class="codehilite"><pre><span></span><code><span class="n">self</span><span class="o">:</span><span class="w"> </span><span class="n">Referência</span><span class="w"> </span><span class="err">à</span><span class="w"> </span><span class="n">instância</span><span class="w"> </span><span class="n">atual</span><span class="o">.</span>
-</code></pre></div>
-
-<p>Returns:</p>
-<div class="codehilite"><pre><span></span><code><span class="nv">value</span><span class="w"> </span><span class="ss">(</span><span class="nv">str</span><span class="ss">)</span>:<span class="w"> </span><span class="nv">Uma</span><span class="w"> </span><span class="nv">string</span><span class="w"> </span><span class="nv">representando</span><span class="w"> </span><span class="nv">o</span><span class="w"> </span><span class="nv">comportamento</span><span class="w"> </span><span class="k">do</span><span class="w"> </span><span class="nv">m</span>é<span class="nv">todo</span>.
-</code></pre></div>
-
-
-            <details class="quote">
-              <summary>Source code in <code>conteudo/modulo_1/classes_e_objetos.py</code></summary>
-              <div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">22</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
 <span class="normal">23</span>
 <span class="normal">24</span>
 <span class="normal">25</span>
-<span class="normal">26</span>
-<span class="normal">27</span>
-<span class="normal">28</span>
-<span class="normal">29</span>
-<span class="normal">30</span>
-<span class="normal">31</span>
-<span class="normal">32</span>
-<span class="normal">33</span>
-<span class="normal">34</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">metodo_de_instancia</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Método que pode ser chamado em uma instância da classe.</span>
+<span class="normal">26</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">ContaRepositoryInterface</span><span class="p">(</span><span class="n">ABC</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Interface para operações de persistência de contas.&quot;&quot;&quot;</span>
+
+    <span class="nd">@abstractmethod</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">salvar_conta</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">conta</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Salva uma conta no repositório.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            conta (Conta): Conta a ser salva.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">pass</span>
+
+    <span class="nd">@abstractmethod</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">obter_conta</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">numero</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Obtém uma conta pelo número.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            numero (str): Número da conta.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            Conta (Conta): Conta correspondente.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">pass</span>
+</code></pre></div></td></tr></table></div>
+              </details>
+
+
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+
+
+<div class="doc doc-object doc-function">
+
+
+<h3 id="conteudo.modulo_2.exemplo.banco.dominio.interfaces.ContaRepositoryInterface.obter_conta" class="doc doc-heading">
+            <code class=" language-python"><span class="n">obter_conta</span><span class="p">(</span><span class="n">numero</span><span class="p">)</span></code>
+
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-abstractmethod"><code>abstractmethod</code></small>
+  </span>
+
+<a href="#conteudo.modulo_2.exemplo.banco.dominio.interfaces.ContaRepositoryInterface.obter_conta" class="headerlink" title="Permanent link">&para;</a></h3>
+
+
+    <div class="doc doc-contents ">
+
+        <p>Obtém uma conta pelo número.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>numero</code>
+            </td>
+            <td>
+                  <code><span title="str">str</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Número da conta.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+    <p><span class="doc-section-title">Returns:</span></p>
+    <table>
+      <thead>
+        <tr>
+<th>Name</th>          <th>Type</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+<td><code>Conta</code></td>            <td>
+                  <code><span title="Conta">Conta</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Conta correspondente.</p>
+              </div>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+
+
+            <details class="quote">
+              <summary>Source code in <code>conteudo/modulo_2/exemplo/banco/dominio/interfaces.py</code></summary>
+              <div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@abstractmethod</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">obter_conta</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">numero</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Obtém uma conta pelo número.</span>
 
 <span class="sd">    Args:</span>
-
-<span class="sd">        self: Referência à instância atual.</span>
+<span class="sd">        numero (str): Número da conta.</span>
 
 <span class="sd">    Returns:</span>
-
-<span class="sd">        value (str): Uma string representando o comportamento do método.</span>
+<span class="sd">        Conta (Conta): Conta correspondente.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">return</span> <span class="sa">f</span><span class="s1">&#39;Este é um método de instância. Atributo de instância: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">atributo_de_instancia</span><span class="si">}</span><span class="s1">&#39;</span>
+    <span class="k">pass</span>
 </code></pre></div></td></tr></table></div>
             </details>
     </div>
@@ -1565,45 +1702,69 @@ comportamentos (métodos) que os objetos podem ter.</p>
 <div class="doc doc-object doc-function">
 
 
-<h3 id="conteudo.modulo_1.classes_e_objetos.MinhaClasse.metodo_estatico" class="doc doc-heading">
-            <code class=" language-python"><span class="n">metodo_estatico</span><span class="p">()</span></code>
+<h3 id="conteudo.modulo_2.exemplo.banco.dominio.interfaces.ContaRepositoryInterface.salvar_conta" class="doc doc-heading">
+            <code class=" language-python"><span class="n">salvar_conta</span><span class="p">(</span><span class="n">conta</span><span class="p">)</span></code>
 
   <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-staticmethod"><code>staticmethod</code></small>
+      <small class="doc doc-label doc-label-abstractmethod"><code>abstractmethod</code></small>
   </span>
 
-<a href="#conteudo.modulo_1.classes_e_objetos.MinhaClasse.metodo_estatico" class="headerlink" title="Permanent link">&para;</a></h3>
+<a href="#conteudo.modulo_2.exemplo.banco.dominio.interfaces.ContaRepositoryInterface.salvar_conta" class="headerlink" title="Permanent link">&para;</a></h3>
 
 
     <div class="doc doc-contents ">
 
-        <p>Método estático que não depende de instância ou classe.</p>
-<p>Returns:</p>
-<div class="codehilite"><pre><span></span><code><span class="nv">value</span><span class="w"> </span><span class="ss">(</span><span class="nv">str</span><span class="ss">)</span>:<span class="w"> </span><span class="nv">Uma</span><span class="w"> </span><span class="nv">string</span><span class="w"> </span><span class="nv">representando</span><span class="w"> </span><span class="nv">o</span><span class="w"> </span><span class="nv">comportamento</span><span class="w"> </span><span class="k">do</span><span class="w"> </span><span class="nv">m</span>é<span class="nv">todo</span><span class="w"> </span><span class="nv">est</span>á<span class="nv">tico</span>.
-</code></pre></div>
+        <p>Salva uma conta no repositório.</p>
+
+
+<p><span class="doc-section-title">Parameters:</span></p>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Default</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr class="doc-section-item">
+            <td>
+                <code>conta</code>
+            </td>
+            <td>
+                  <code><span title="Conta">Conta</span></code>
+            </td>
+            <td>
+              <div class="doc-md-description">
+                <p>Conta a ser salva.</p>
+              </div>
+            </td>
+            <td>
+                <em>required</em>
+            </td>
+          </tr>
+      </tbody>
+    </table>
 
 
             <details class="quote">
-              <summary>Source code in <code>conteudo/modulo_1/classes_e_objetos.py</code></summary>
-              <div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">51</span>
-<span class="normal">52</span>
-<span class="normal">53</span>
-<span class="normal">54</span>
-<span class="normal">55</span>
-<span class="normal">56</span>
-<span class="normal">57</span>
-<span class="normal">58</span>
-<span class="normal">59</span>
-<span class="normal">60</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@staticmethod</span>
-<span class="k">def</span><span class="w"> </span><span class="nf">metodo_estatico</span><span class="p">():</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Método estático que não depende de instância ou classe.</span>
+              <summary>Source code in <code>conteudo/modulo_2/exemplo/banco/dominio/interfaces.py</code></summary>
+              <div class="codehilite"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@abstractmethod</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">salvar_conta</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">conta</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Salva uma conta no repositório.</span>
 
-<span class="sd">    Returns:</span>
-
-<span class="sd">        value (str): Uma string representando o comportamento do método estático.</span>
+<span class="sd">    Args:</span>
+<span class="sd">        conta (Conta): Conta a ser salva.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">return</span> <span class="s1">&#39;Este é um método estático. Não depende de instância ou classe.&#39;</span>
+    <span class="k">pass</span>
 </code></pre></div></td></tr></table></div>
             </details>
     </div>
@@ -1704,10 +1865,10 @@ comportamentos (métodos) que os objetos podem ter.</p>
     
     
       
-      <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.top", "header.autohide", "content.code.copy"], "search": "../../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../../../../../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.top", "header.autohide", "content.code.copy"], "search": "../../../../../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado para \u00e1rea de transfer\u00eancia", "clipboard.copy": "Copiar para \u00e1rea de transfer\u00eancia", "search.result.more.one": "mais 1 nesta p\u00e1gina", "search.result.more.other": "# mais nesta p\u00e1gina", "search.result.none": "Nenhum documento encontrado", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Digite para iniciar a busca", "search.result.term.missing": "Ausente", "select.version": "Selecione a vers\u00e3o"}, "version": null}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      <script src="../../../../../../../assets/javascripts/bundle.13a4f30d.min.js"></script>
       
     
   </body>
