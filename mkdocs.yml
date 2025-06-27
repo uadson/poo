@@ -20,7 +20,7 @@ theme:
     code: Roboto Mono
   icon:
     repo: fontawesome/brands/github
-    link: https://github.com/uadson/poo
+    link: https://github.com/uadson/poo/
 
 nav:
   - Início: index.md
@@ -43,6 +43,16 @@ nav:
                   - infra:
                       - repositorios: content/modules/2/example/banco/infra/repo_memoria.md
                   - CLI ou Interface Gráfica: content/modules/2/example/banco/cli.md
+      - Parte 3:
+          - Design Patterns: content/modules/3/design_patterns.md
+          - Exemplo:
+              - Resumo: content/modules/3/example/summary.md
+              - Singleton: content/modules/3/example/singleton.md
+              - Factory: content/modules/3/example/factory.md
+              - Strategy: content/modules/3/example/strategy.md
+              - Observer: content/modules/3/example/observer.md
+              - Decorator: content/modules/3/example/decorator.md
+              - Adapter: content/modules/3/example/adapter.md
 
   - Sobre: about.md
 
@@ -73,5 +83,5 @@ plugins:
   - mkdocstrings:
       default_handler: python
 
-repo_url: https://github.com/uadson/poo
+repo_url: https://github.com/uadson/poo/
 repo_name: uadson/poo

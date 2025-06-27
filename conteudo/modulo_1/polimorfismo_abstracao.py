@@ -16,7 +16,7 @@ class Pato:
         Returns:
             value (str): Som do pato.
         """
-        return 'Quack Quack'
+        return "Quack Quack"
 
 
 class Cachorro:
@@ -33,7 +33,7 @@ class Cachorro:
         Returns:
             value (str): Som do cachorro.
         """
-        return 'Au Au'
+        return "Au Au"
 
 
 def fazer_som_do_animal(animal):
@@ -90,7 +90,7 @@ class Forma(ABC):
         Returns:
             value (float): Nome da forma.
         """
-        return 'Forma Geométrica'
+        return "Forma Geométrica"
 
 
 class Circulo(Forma):
@@ -101,9 +101,9 @@ class Circulo(Forma):
 
     def __init__(self, raio):
         """
-        Método construtor que inicializa o raio do círculo.
+        Método inicializador.
 
-        Args:
+        Attributes:
             raio (float): Raio do círculo.
         """
         self.raio = raio

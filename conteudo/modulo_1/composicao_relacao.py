@@ -7,7 +7,7 @@ class Motor:
         """
         Inicializa o motor com um tipo específico.
 
-        Args:
+        Attributes:
             tipo (str): O tipo do motor (ex: "V6", "V8").
         """
         self.tipo = tipo
@@ -19,7 +19,7 @@ class Motor:
         Returns:
             value (str): Motor (self.tipo) ligado!
         """
-        return f'Motor {self.tipo} ligado!'
+        return f"Motor {self.tipo} ligado!"
 
 
 # Composição
@@ -28,7 +28,7 @@ class Carro:
         """
         Inicializa o carro com uma marca, modelo e um motor.
 
-        Args:
+        Attributes:
 
             marca (str): A marca do carro.
             modelo (str): O modelo do carro.
@@ -46,7 +46,7 @@ class Carro:
 
             value (str): Mensagem indicando que o carro está pronto para dirigir.
         """
-        return f'{self.motor.ligar()} Carro {self.marca} {self.modelo} pronto para dirigir!'
+        return f"{self.motor.ligar()} Carro {self.marca} {self.modelo} pronto para dirigir!"
 
 
 # Agregação / Relação
@@ -55,7 +55,7 @@ class Biblioteca:
         """
         Inicializa a biblioteca com um nome.
 
-        Args:
+        Attributes:
 
             nome (str): O nome da biblioteca.
         """
@@ -88,7 +88,7 @@ class Livro:
         """
         Inicializa o livro com um título e um autor.
 
-        Args:
+        Attributes:
 
             titulo (str): O título do livro.
             autor (str): O autor do livro.
@@ -104,16 +104,16 @@ class Livro:
 
             value (str): Representação do livro.
         """
-        return f'{self.titulo} por {self.autor}'
+        return f"{self.titulo} por {self.autor}"
 
 
 # Exemplo de uso
-carro = Carro('Ford', 'Focus', 'Gasolina')
+carro = Carro("Ford", "Focus", "Gasolina")
 print(carro.dirigir())
 
-livro1 = Livro('1984', 'George Orwell')
-livro2 = Livro('O Pequeno Príncipe', 'Antoine de Saint-Exupéry')
-biblioteca = Biblioteca('Minha Biblioteca')
+livro1 = Livro("1984", "George Orwell")
+livro2 = Livro("O Pequeno Príncipe", "Antoine de Saint-Exupéry")
+biblioteca = Biblioteca("Minha Biblioteca")
 biblioteca.adicionar_livro(livro1)
 biblioteca.adicionar_livro(livro2)
 print(biblioteca.listar_livros())

@@ -6,11 +6,11 @@ class MinhaClasse:
     """
 
     # Atributos de classe
-    atributo_de_classe = 'Este é um atributo de classe'
+    atributo_de_classe = "Este é um atributo de classe"
 
     def __init__(self, atributo_de_instancia):
         """
-        Método construtor que inicializa os atributos de instância.
+        Método que inicializador.
 
         Args:
 
@@ -31,7 +31,7 @@ class MinhaClasse:
 
             value (str): Uma string representando o comportamento do método.
         """
-        return f'Este é um método de instância. Atributo de instância: {self.atributo_de_instancia}'
+        return f"Este é um método de instância. Atributo de instância: {self.atributo_de_instancia}"
 
     @classmethod
     def metodo_de_classe(cls):
@@ -46,7 +46,9 @@ class MinhaClasse:
 
             value (str): Uma string representando o comportamento do método de classe.
         """
-        return f'Este é um método de classe. Atributo de classe: {cls.atributo_de_classe}'
+        return (
+            f"Este é um método de classe. Atributo de classe: {cls.atributo_de_classe}"
+        )
 
     @staticmethod
     def metodo_estatico():
@@ -57,13 +59,13 @@ class MinhaClasse:
 
             value (str): Uma string representando o comportamento do método estático.
         """
-        return 'Este é um método estático. Não depende de instância ou classe.'
+        return "Este é um método estático. Não depende de instância ou classe."
 
 
 # Exemplo de uso da classe
-if __name__ == '__main__':
+if __name__ == "__main__":
     # Criando uma instância da classe
-    objeto = MinhaClasse('Atributo de Instância 1')
+    objeto = MinhaClasse("Atributo de Instância 1")
 
     # Acessando o atributo de instância
     print(objeto.atributo_de_instancia)
@@ -78,7 +80,7 @@ if __name__ == '__main__':
     print(MinhaClasse.metodo_estatico())
 
     # Criando outro objeto da mesma classe
-    objeto2 = MinhaClasse('Atributo de Instância 2')
+    objeto2 = MinhaClasse("Atributo de Instância 2")
 
     # Acessando o atributo de instância do segundo objeto
     print(objeto2.atributo_de_instancia)
