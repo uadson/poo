@@ -50,9 +50,9 @@ class Conta(ABC):
         """
         if valor > 0:
             self._saldo += valor
-            print(f"Depósito de R${valor:.2f} realizado com sucesso.")
+            print(f'Depósito de R${valor:.2f} realizado com sucesso.')
         else:
-            print("Valor de depósito inválido.")
+            print('Valor de depósito inválido.')
 
 
 # ==================================
@@ -73,9 +73,9 @@ class ContaCorrente(Conta):
         """
         if valor <= self._saldo + self._limite:
             self._saldo -= valor
-            print(f"Saque de R${valor:.2f} realizado com sucesso.")
+            print(f'Saque de R${valor:.2f} realizado com sucesso.')
         else:
-            print("Saldo insuficiente.")
+            print('Saldo insuficiente.')
 
 
 # ==================================
@@ -92,9 +92,9 @@ class ContaPoupanca(Conta):
         """
         if valor <= self._saldo:
             self._saldo -= valor
-            print(f"Saque de R${valor:.2f} realizado com sucesso.")
+            print(f'Saque de R${valor:.2f} realizado com sucesso.')
         else:
-            print("Saldo insuficiente.")
+            print('Saldo insuficiente.')
 
 
 # =====================================
@@ -114,7 +114,7 @@ class Agencia:
         Adiciona uma conta à agência.
         """
         self.contas.append(conta)
-        print(f"Conta {conta._numero} adicionada à agência {self.numero}.")
+        print(f'Conta {conta._numero} adicionada à agência {self.numero}.')
 
 
 # =====================================
@@ -135,14 +135,14 @@ class Banco:
         Adiciona um cliente ao banco.
         """
         self.clientes.append(cliente)
-        print(f"Cliente {cliente.nome} adicionado ao banco {self.nome}.")
+        print(f'Cliente {cliente.nome} adicionado ao banco {self.nome}.')
 
     def adicionar_agencia(self, agencia):
         """
         Adiciona uma agência ao banco.
         """
         self.agencias.append(agencia)
-        print(f"Agência {agencia.numero} adicionada ao banco {self.nome}.")
+        print(f'Agência {agencia.numero} adicionada ao banco {self.nome}.')
 
     def criar_conta_corrente(self, cliente, agencia_num, numero_conta, limite=500):
         """
@@ -152,9 +152,7 @@ class Banco:
         if agencia:
             conta = ContaCorrente(numero_conta, cliente, limite)
             agencia.adicionar_conta(conta)
-            print(
-                f"Conta corrente {numero_conta} criada para o cliente {cliente.nome}."
-            )
+            print(f'Conta corrente {numero_conta} criada para o cliente {cliente.nome}.')
             return conta
 
     def criar_conta_poupanca(self, cliente, agencia_num, numero_conta):
@@ -165,9 +163,7 @@ class Banco:
         if agencia:
             conta = ContaPoupanca(numero_conta, cliente)
             agencia.adicionar_conta(conta)
-            print(
-                f"Conta poupança {numero_conta} criada para o cliente {cliente.nome}."
-            )
+            print(f'Conta poupança {numero_conta} criada para o cliente {cliente.nome}.')
             return conta
 
     def _buscar_agencia(self, numero):
@@ -177,7 +173,7 @@ class Banco:
         for agencia in self.agencias:
             if agencia.numero == numero:
                 return agencia
-        print(f"Agência {numero} não encontrada.")
+        print(f'Agência {numero} não encontrada.')
         return None
 
 
@@ -189,35 +185,33 @@ class Banco:
 def exemplo_de_uso():
     """Função principal para demonstrar o uso do sistema bancário."""
     # Criando o banco
-    banco = Banco("Banco Exemplo")
+    banco = Banco('Banco Exemplo')
 
     # Adicionando clientes
-    cliente1 = Cliente("Alice", "123.456.789-00")
-    cliente2 = Cliente("Bob", "987.654.321-00")
+    cliente1 = Cliente('Alice', '123.456.789-00')
+    cliente2 = Cliente('Bob', '987.654.321-00')
     banco.adicionar_cliente(cliente1)
     banco.adicionar_cliente(cliente2)
 
     # Adicionando agências
-    agencia1 = Agencia("001")
-    agencia2 = Agencia("002")
+    agencia1 = Agencia('001')
+    agencia2 = Agencia('002')
     banco.adicionar_agencia(agencia1)
     banco.adicionar_agencia(agencia2)
 
     # Criando contas
-    conta_corrente_alice = banco.criar_conta_corrente(
-        cliente1, "001", "CC001", limite=1000
-    )
-    conta_poupanca_bob = banco.criar_conta_poupanca(cliente2, "002", "CP001")
+    conta_corrente_alice = banco.criar_conta_corrente(cliente1, '001', 'CC001', limite=1000)
+    conta_poupanca_bob = banco.criar_conta_poupanca(cliente2, '002', 'CP001')
 
     # Operações nas contas
     conta_corrente_alice.depositar(500)
     conta_corrente_alice.sacar(200)
-    print(f"Saldo da conta corrente de Alice: R${conta_corrente_alice.saldo:.2f}")
+    print(f'Saldo da conta corrente de Alice: R${conta_corrente_alice.saldo:.2f}')
 
     conta_poupanca_bob.depositar(300)
     conta_poupanca_bob.sacar(100)
-    print(f"Saldo da conta poupança de Bob: R${conta_poupanca_bob.saldo:.2f}")
+    print(f'Saldo da conta poupança de Bob: R${conta_poupanca_bob.saldo:.2f}')
 
 
-if __name__ == "__main__":
-    main()
+if __name__ == '__main__':
+    exemplo_de_uso()

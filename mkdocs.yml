@@ -34,6 +34,16 @@ nav:
           - Exemplo: content/modules/1/exemplo.md
       - Parte 2:
           - SOLID: content/modules/2/solid.md
+          - Exemplo:
+              - Projeto Banco: content/modules/2/example/project/projeto.md
+              - banco:
+                  - dominio:
+                      - entidades: content/modules/2/example/banco/dominio/entidades.md
+                      - interfaces: content/modules/2/example/banco/dominio/interfaces.md
+                  - infra:
+                      - repositorios: content/modules/2/example/banco/infra/repo_memoria.md
+                  - CLI ou Interface Gráfica: content/modules/2/example/banco/cli.md
+
   - Sobre: about.md
 
 copyright: Copyright &copy; 2025 Uadson Feitosa | Licença MIT.

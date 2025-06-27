@@ -130,4 +130,5 @@ dmypy.json
 
 .vscode
 .ruff_cache
-self-versioning.sh
+versioning.sh
+release.sh
